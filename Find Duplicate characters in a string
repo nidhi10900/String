@@ -1,0 +1,36 @@
+#Find Duplicate characters in a string
+
+#withou function
+string = input()
+char = {}
+for ch in string:
+  if ch in char:
+    char[ch]+=1
+  else:
+    char[ch]=1
+dupli = []
+for ch,count in char.items():
+  if count>1:
+    dupli.append(ch)
+print(" ".join(dupli))
+
+
+#with function
+
+
+def find_dupli(string):
+  char = {}
+  for ch in string:
+     if ch in char:
+       char[ch]+=1
+     else:
+       char[ch]=1
+  dupli=[]
+  for ch,count in char.items():
+    if count>1:
+      dupli.append(ch)
+  return "".join(dupli)
+
+string = input()
+print(find_dupli(string))
+  
