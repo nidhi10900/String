@@ -1,0 +1,23 @@
+#Write a Code to check whether one string is a rotation of another
+# without Function
+
+str1 = input()
+str2 = input()
+if len(str1)==len(str2) and str2 in (str1 + str1):
+  print("Yes/True")
+else:
+  print("No/False")
+  
+  
+# with Function
+
+def rotate_str(str1,str2):
+  if len(str1)==len(str2) and str2 in (str1 + str1):
+    return"Yes"
+  else:
+    return "No"
+  
+  
+str1 = input()
+str2 = input()
+print(rotate_str(str1,str2))
