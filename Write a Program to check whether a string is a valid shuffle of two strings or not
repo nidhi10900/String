@@ -1,0 +1,48 @@
+#Write a Program to check whether a string is a valid shuffle of two strings or not
+
+# without Function
+
+str1 = input()
+str2 = input()
+suffle = input()
+if len(str1)+len(str2)!=len(suffle):
+  print("false")
+else:
+  i,j,k=0,0,0
+  while k<len(suffle):
+    if i<len(str1) and str1[i]==suffle[k]:
+      i+=1
+    elif j<len(str2) and str2[j]==suffle[k]:
+      j+=1
+    else:
+      print("False")
+      break
+    k+=1
+if i==len(str1) and j==len(str2):
+  print("true")
+else:
+  print("false")
+    
+  
+# with Function
+
+def suffle_str(str1,str2,suffle):
+  if len(str1)+len(str2)!=len(suffle):
+    return false
+  else:
+    i,j,k = 0,0,0
+    while k<len(suffle):
+      if i<len(str1)and str1[i]==suffle[k]:
+        i+=1
+      elif j<len(str2) and str2[j]==suffle[k]:
+        j+=1
+      else:
+        return false
+      k+=1
+    return i==len(str1) and j==len(str2)
+     
+  
+str1 = input()
+str2 = input()
+suffle = input()
+print(suffle_str(str1,str2,suffle))
