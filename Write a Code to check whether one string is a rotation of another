@@ -1,4 +1,4 @@
-#Write a Code to check whether one string is a rotation of another
+#Write a Code to check whether one string is a rotation of another   #str1 + str1 = "abcd" + "abcd" = "abcdabcd"
 # without Function
 
 str1 = input()
