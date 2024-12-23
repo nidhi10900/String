@@ -1,0 +1,15 @@
+#Count number of vowels, consonants, spaces in String
+
+string = input()
+vowel,cons,space = 0,0,0
+for ch in string:
+  if ch=="aeiou":
+    vowel+=1
+  elif ch ==" ":
+    space+=1
+  else:
+    cons+=1
+
+print(vowel)
+print(cons)
+print(space)
