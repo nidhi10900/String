@@ -1,0 +1,22 @@
+#Remove characters from a string except alphabets
+#without function
+
+
+# string = input()
+# res = ""
+# for ch in string:
+#     if ch.isalpha():
+#         res+=ch
+# print(res)
+
+
+# with function
+def remov(string):
+  res = ""
+  for ch in string:
+    if ch.isalpha():
+      res+=ch
+  return res
+
+string =input()
+print(remov(string))
