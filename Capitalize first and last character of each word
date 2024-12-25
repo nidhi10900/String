@@ -1,0 +1,12 @@
+#Capitalize first and last character of each word
+
+string = input()
+word = string.split()
+res = []
+for ch in word:
+  if len(ch)==1:
+    res.append(.upper())
+  else:
+    stri = ch[0].upper()+ch[1:-1]+ch[-1].upper()
+    res.append(stri)
+print(" ".join(stri))
