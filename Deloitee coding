@@ -1,0 +1,36 @@
+Bob wants to send an encrypted message to Alice. He thought of using caesar cipher, but with a small modification. Caesar cipher is a type of substitution orpher wher certain number of places down the alphabet. With the modification, instead of shifting all letters by a certain number Bob shifts each letter by different tribers Algorithm to encrypt message
+Algorithm Encrypt(BK) where S is the string to be encrypted and the keyword
+Step T-Compute Shift array(A), Each shift value in the shift array arr would be the character of K to the Step 2: Create a Shift array(A) whose length is equal to the length of string S. If the length of K length of S then repeat A multiple times til its length equal to alexo shift value is 253-1)
+Step 3: Encrypt each character of S by shifting it with the corresponding shift value in A. (if character values of S +Shift value > 26 starts from Tagain)
+Step 4: Print the encrypted string E.End Encrypt
+Read the input from STDIN and print the output to STDOUT. Do not write arbitrary strings while reading the input or while printing, as these contribute to the standard output
+Constraints:
+1) All strings contain only lowercase alphabets.
+II) Strings do not have any space in between.
+III) Len(S) 100.
+Input Formation
+The first line of input contains K, which is the keyword. The second line of input contains S, which is the text to
+Output Format:
+A single line of output contains E, which is the encrypted text message.
+Sample Input1:
+sum
+elephant
+Sample Output1:
+wfqhbmfn
+
+
+def encrypt(keyword,text):
+  # step1  compute shift array
+  shifts = [(ord(char)-ord('a')) for char in keyword]
+  shifts = shifts*(len(text)//len(keyword)) + shifts[:len(text)%len(keyword)]
+  
+  #step2 Encrypt text
+  encrypt_t = []
+  for i in range(len(text)):
+    new_char = chr(((ord(text[i])-ord('a')+shifts[i])%26)+ord('a'))
+    encrypt_t.append(new_char)
+  return ''.join(encrypt_t)
+
+keyword = input()
+text = input()
+print(encrypt(keyword,text))
