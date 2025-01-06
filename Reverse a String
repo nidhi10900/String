@@ -1,0 +1,16 @@
+#Reverse a String
+
+string = input()
+rev = string[::-1]
+print(rev)
+
+
+
+s = input()
+reversed_str = ""
+
+for char in s:
+    reversed_str = char + reversed_str
+
+print( reversed_str)
+
