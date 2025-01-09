@@ -1,0 +1,25 @@
+#Longest Palindrome Substring 
+
+s = input()
+n = len(s)
+longest = ""
+max_count = 0
+for ch in range(n):
+  left,right = ch,ch
+  while left>=0 and right<n and s[left]==s[right]:
+    curr_count = right-left+1
+    if curr_count>max_count:
+      max_count=curr_count
+      longest = s[left:right+1]
+    left-=1
+    right+=1
+  left,right = ch,ch+1
+  while left>=0 and right<n and s[left]==s[right]:
+    curr_count = right-left+1
+    if curr_count>max_count:
+      max_count=curr_count
+      longest = s[left:right+1]
+    left-=1
+    right+=1
+print(longest)
+    
