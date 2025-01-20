@@ -1,0 +1,9 @@
+#Find Non-repeating characters of a String
+str1 = input()
+
+non_repeat = []
+for ch in str1:
+  if str1.count(ch)==1:
+    non_repeat.append(ch)
+print(non_repeat)
+   
