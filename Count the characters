@@ -1,0 +1,14 @@
+#  Count the characters 
+str1 = input()
+N = int(input())
+freq = {}
+count=0
+for ch in str1:
+  if ch in freq:
+    freq[ch]+=1
+  else:
+    freq[ch]=1
+for ch in freq:
+   if freq[ch]==N:
+      count+=1
+print(count)          
