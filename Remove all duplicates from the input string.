@@ -1,0 +1,9 @@
+#Remove all duplicates from the input string.
+string = input()
+res = ''
+seen = set()
+for ch in string:
+  if ch not in seen:
+    res+=ch
+    seen.add(ch)
+print(res)
