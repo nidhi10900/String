@@ -1,0 +1,12 @@
+#Print all the duplicates in the input string.
+string = input()
+res = set()
+seen = set()
+for ch in string:
+  if ch in seen:
+    res.add(ch)
+  else:
+    seen.add(ch)
+print(''.join(res))
+
+
