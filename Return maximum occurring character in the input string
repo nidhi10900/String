@@ -1,0 +1,16 @@
+#Return maximum occurring character in the input string
+string = input()
+freq = {}
+for ch in string:
+  if ch in freq:
+    freq[ch]+=1
+  else:
+    freq[ch]=1
+max_ch = ''
+max_count=0
+for ch,count in freq.items():
+  if count>max_count:
+    max_count=count
+    max_ch = ch
+print(max_ch)
+  
