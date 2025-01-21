@@ -1,0 +1,15 @@
+#reverse words in string
+
+string = input()
+words = string.split()
+rev = words[::-1]
+print(' '.join(rev))
+
+
+#reverse char in sentance
+string = input()
+rev =[]
+for words in string:
+  rev.append(words)
+  rev_str = rev[::-1]
+print(''.join(rev_str))
