@@ -1,0 +1,9 @@
+#Remove characters from first string present in the second string
+first_str = input()
+second_str = input()
+res = ''
+rem = set(second_str)
+for ch in first_str:
+  if ch not in rem:
+    res+=ch
+print(res)
