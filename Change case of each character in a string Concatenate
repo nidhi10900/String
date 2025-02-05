@@ -1,0 +1,17 @@
+#Change case of each character in a string
+Concatenate
+str1 = input()
+output = " "
+for ch in str1:
+  if ch.islower():
+    output+=ch.upper()
+  else:
+    output+=ch.lower()
+print(output)
+
+
+def case(str1):
+  return str1.swapcase()
+
+str1 = input()
+print(case(str1))
