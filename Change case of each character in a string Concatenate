@@ -8,6 +8,7 @@ for ch in str1:
   else:
     output+=ch.lower()
 print(output)
+--------------------------------------------------------
 
 
 def case(str1):
