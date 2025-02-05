@@ -1,0 +1,15 @@
+#Write a program to find a word in a given string which has the highest number of repeated letters
+
+string = input()
+words = string.split()
+
+max_repeat = 0
+res = -1
+
+for word in words:
+  for ch in word:
+    count = word.count(ch)
+    if count>max_repeat:
+      max_repeat = count
+      res = word
+print(res)
