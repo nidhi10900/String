@@ -1,0 +1,31 @@
+#Count the number of words in a given string
+
+string = input()
+count = 0
+for i in range(len(string)):
+  if (i==0 or string[i-1]==" ") and string[i]!=" ":
+    count+=1
+print(count)
+
+# --------------------------
+string = input()
+word = string.split()
+print(len(word))
+
+# --------------------------
+
+def count_word(string):
+  count = 0
+  in_word = False
+  for ch in string:
+    if ch!=" ":
+      if not in_word:
+        count+=1
+        in_word = True
+    else:
+      in_word = False
+  return count
+
+
+string = input()
+print(count_word(string))
