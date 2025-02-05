@@ -1,0 +1,4 @@
+# Write a program to sort characters in a string
+string = input()
+sort_str = sorted(string)
+print(''.join(sort_str))
