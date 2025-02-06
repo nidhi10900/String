@@ -4,9 +4,24 @@ res = set()
 seen = set()
 for ch in string:
   if ch in seen:
-    res.add(ch)
+    res.add(ch)               
   else:
     seen.add(ch)
-print(''.join(res))
+print(''.join(res))       #output: n,i,s,t
 
+-------------------------------------
+
+string = input()
+dic = {}
+for ch in string:
+  if ch in dic:
+    dic[ch]+=1
+  else:
+    dic[ch]=1
+for ch ,count in dic.items():
+  if count>1:
+    print(ch,count)          #output:s 2
+                                     i 4
+                                     n 3
+                                     t 2
 
