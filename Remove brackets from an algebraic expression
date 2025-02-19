@@ -1,0 +1,7 @@
+#Remove brackets from an algebraic expression
+express = input()
+res = ""
+for ch in express:
+  if ch not in " []{}()":
+    res+=ch
+print(res)
