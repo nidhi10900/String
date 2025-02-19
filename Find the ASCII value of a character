@@ -1,0 +1,3 @@
+#Find the ASCII value of a character
+char = input()
+print(ord(char))
