@@ -1,0 +1,9 @@
+#Remove spaces from a string
+string = input()
+res = ""
+for ch in string:
+  if ch not in " ":
+    res+=ch
+print(res)
+
+
