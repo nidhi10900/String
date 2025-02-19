@@ -1,0 +1,7 @@
+#Remove all vowels from the string
+string = input()
+res = ""
+for ch in string:
+  if ch not in "AEIOUaeiou":
+    res+=ch
+print(res)
