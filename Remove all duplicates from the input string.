@@ -7,3 +7,14 @@ for ch in string:
     res+=ch
     seen.add(ch)
 print(res)
+
+
+#using dictionary
+string = input()
+dic ={}
+for ch in string:
+  dic[ch]=1
+
+res = ''.join(dic.keys())
+print(res)
+    
